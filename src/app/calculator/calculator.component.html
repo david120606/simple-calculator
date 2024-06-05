@@ -1,19 +1,32 @@
-<p>Mi Calculadora!</p>
-{{operacion}}
-<button mat-raised-button (click)="buttonPress('0')">0</button>
-<button mat-raised-button (click)="buttonPress('1')">1</button>
-<button mat-raised-button (click)="buttonPress('2')">2</button>
-<button mat-raised-button (click)="buttonPress('3')">3</button>
-<button mat-raised-button (click)="buttonPress('4')">4</button>
-<button mat-raised-button (click)="buttonPress('5')">5</button>
-<button mat-raised-button (click)="buttonPress('6')">6</button>
-<button mat-raised-button (click)="buttonPress('7')">7</button>
-<button mat-raised-button (click)="buttonPress('8')">8</button>
-<button mat-raised-button (click)="buttonPress('9')">9</button>
-<button mat-raised-button (click)="buttonPress('+')">+</button>
-<button mat-raised-button (click)="buttonPress('-')">-</button>
-<button mat-raised-button (click)="buttonPress('*')">*</button>
-<button mat-raised-button (click)="buttonPress('/')">/</button>
-<button mat-raised-button (click)="buttonPress('=')">=</button>
-<button mat-raised-button (click)="buttonPress('.')">.</button>
-<button mat-raised-button (click)="buttonPress('C')">C</button>
+<div class="calculator">
+    
+    <div class="button-grid">
+
+        <button class="color-gray" mat-raised-button (click)="buttonPress('C')">C</button>
+        <button class="color-gray" mat-raised-button (click)="buttonPress('CE')">CE</button>
+        <button class="color-gray" mat-raised-button (click)="buttonPress('%')">%</button>
+        <button class="color-operations" mat-raised-button (click)="buttonPress('/')">/</button>
+
+        <button mat-raised-button (click)="buttonPress('9')">9</button>
+        <button mat-raised-button (click)="buttonPress('8')">8</button>
+        <button mat-raised-button (click)="buttonPress('7')">7</button>
+        <button class="color-operations" mat-raised-button (click)="buttonPress('*')">*</button>
+
+
+        <button mat-raised-button (click)="buttonPress('6')">6</button>
+        <button mat-raised-button (click)="buttonPress('5')">5</button>
+        <button mat-raised-button (click)="buttonPress('4')">4</button>
+        <button class="color-operations" mat-raised-button (click)="buttonPress('-')">-</button>
+
+        <button mat-raised-button (click)="buttonPress('3')">3</button>
+        <button mat-raised-button (click)="buttonPress('2')">2</button>
+        <button mat-raised-button (click)="buttonPress('1')">1</button>
+        <button class="color-operations" mat-raised-button (click)="buttonPress('+')">+</button>
+
+        <button class="color-operations" mat-raised-button></button>
+        <button mat-raised-button (click)="buttonPress('0')">0</button>
+        <button mat-raised-button (click)="buttonPress('.')">.</button>
+        <button class="color-operations" mat-raised-button (click)="buttonPress('=')">=</button>
+
+    </div>
+</div>

@@ -8,6 +8,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list'
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { MatGridListModule } from '@angular/material/grid-list'
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

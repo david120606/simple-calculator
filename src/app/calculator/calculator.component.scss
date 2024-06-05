@@ -1,0 +1,80 @@
+.calculator {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    border-radius: 20px;
+
+    mat-form-field {
+        width: 90%;
+        text-align: right;
+        font-size: 24px;
+        color: white;
+        background-color: #000000;
+        border: none;
+
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: transparent;
+            border: none;
+          }
+        
+          .mat-form-field-appearance-fill .mat-form-field-outline {
+            display: none;
+          }
+        
+          .mat-form-field-appearance-fill .mat-form-field-infix {
+            border: none;
+          }
+        
+          .mat-form-field-ripple {
+            display: none; /* Oculta el ripple */
+          }
+    }
+
+    input.mat-input-element {
+        caret-color: transparent;
+        /* Ocultar el cursor de texto */
+    }
+
+    input.mat-input-element:focus {
+        outline: none;
+        /* Remover contorno de enfoque */
+        box-shadow: none;
+        /* Remover sombra de enfoque */
+    }
+
+
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        .span-two {
+            grid-column: span 2;
+            width: 50%;
+        }
+
+        .mat-raised-button {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-operations {
+            background-color: #FF9700;
+            color: white;
+
+        }
+
+        .color-gray {
+            background-color: #A5A5A5;
+            color: white;
+
+        }
+    }
+}
